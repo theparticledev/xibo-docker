@@ -27,8 +27,8 @@ services:
             - "/opt/xibo/shared/cms/library:/var/www/cms/library:Z"
             - "/opt/xibo/shared/cms/ca-certs:/var/www/cms/ca-certs:Z"
 
-            - "/home/me/s/xibo-cms/views:/var/www/cms/views:Z"
-            - "/home/me/s/xibo-cms/web/theme:/var/www/cms/web/theme:Z"
+            - "/home/ubuntu/xibo/xibo-cms/views:/var/www/cms/views:Z"
+            - "/home/ubuntu/xibo/xibo-cms/web/theme:/var/www/cms/web/theme:Z"
               #- "./shared/cms/web/theme/custom:/var/www/cms/web/theme/custom:Z"
               #- "./shared/cms/web/userscripts:/var/www/cms/web/userscripts:Z"
               #- "./shared/cms/views:/var/www/cms/views:Z"

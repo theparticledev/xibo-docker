@@ -4,7 +4,8 @@ services:
     cms-db:
         image: mysql:8.0
         volumes:
-            - "/opt/xibo/shared/db:/var/lib/mysql:Z"
+          #- "/opt/xibo/shared/db:/var/lib/mysql:Z"
+            - "/home/ubuntu/xibo/shared/db:/var/lib/mysql:Z"
         environment:
             - MYSQL_DATABASE=cms
             - MYSQL_USER=cms

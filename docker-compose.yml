@@ -5,14 +5,16 @@ services:
         image: mysql:8.0
         volumes:
           #- "/opt/xibo/shared/db:/var/lib/mysql:Z"
-            - "/home/ubuntu/xibo/shared/db:/var/lib/mysql:Z"
+            - "/home/ubuntu/xibo/shared1/db:/var/lib/mysql:Z"
         environment:
             - MYSQL_DATABASE=cms
             - MYSQL_USER=cms
-            - MYSQL_RANDOM_ROOT_PASSWORD=yes
+              #- MYSQL_RANDOM_ROOT_PASSWORD=yes
         mem_limit: 1g
         env_file: config.env
         restart: always
+        ports:
+            - "3306:3306"
     cms-xmr:
         image: ghcr.io/xibosignage/xibo-xmr:0.11
         ports:
